@@ -10,12 +10,16 @@ The `whitelabel-build.ts` script allows you to deploy Uniswap-compatible protoco
 2. **Building all SDK packages** using the standard build process
 3. **Injecting custom contract addresses** into the SDK source files
 4. **Rebuilding the packages** with the updated addresses
-5. **Generating git diff text patches** showing the differences between original and modified builds
+5. **Generating git diff text patches** showing the differences between original and modified builds.
 
 This is useful for:
 - Deploying on custom EVM chains
 - Testing with custom contract deployments
 - Creating chain-specific SDK distributions
+
+### ‼️ ATTENTION
+**The patches this tool generates are specifically designed for use with `bun`**. They almost certainly **will not** work with `pnpm` without at least editing the `a/` and `b/` file paths in the patch text.
+
 
 ## Quick Start
 
@@ -83,13 +87,13 @@ yarn whitelabel:build [options]
 
 ### Available Options
 
-| Option | Description | Default |
-|--------|-------------|---------|
-| `--dry-run` | Preview changes without modifying files | `false` |
-| `--config <path>` | Path to custom config file | `whitelabel-config.json` |
-| `--output-dir <path>` | Directory for patch output | `whitelabel-patches` |
-| `--quiet` | Suppress verbose output | `false` |
-| `--help` | Show help message | - |
+| Option                | Description                             | Default                  |
+| --------------------- | --------------------------------------- | ------------------------ |
+| `--dry-run`           | Preview changes without modifying files | `false`                  |
+| `--config <path>`     | Path to custom config file              | `whitelabel-config.json` |
+| `--output-dir <path>` | Directory for patch output              | `whitelabel-patches`     |
+| `--quiet`             | Suppress verbose output                 | `false`                  |
+| `--help`              | Show help message                       | -                        |
 
 ### Examples
 
