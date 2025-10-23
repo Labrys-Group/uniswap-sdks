@@ -6,6 +6,7 @@
     "uniswap",
     "ethereum"
   ],
+  "version": "1.4.0",
   "license": "MIT",
   "main": "./dist/cjs/src/index.js",
   "module": "./dist/esm/src/index.js",

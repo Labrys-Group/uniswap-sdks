@@ -1,0 +1,32 @@
+{
+  "$schema": "./whitelabel-config.schema.json",
+  "_warning": "⚠️  IMPORTANT: These are EXAMPLE addresses from Ethereum Mainnet. You MUST update all addresses with your own deployed contract addresses before running 'bun run patch:addresses'. Using these placeholder values will break your application!",
+  "chainId": 12345,
+  "chainName": "My Custom Chain",
+  "addresses": {
+    "v2Factory": "0x1111111111111111111111111111111111111111",
+    "v2Router": "0x2222222222222222222222222222222222222222",
+    "v3CoreFactory": "0x3333333333333333333333333333333333333333",
+    "multicall": "0x4444444444444444444444444444444444444444",
+    "quoter": "0x5555555555555555555555555555555555555555",
+    "nonfungiblePositionManager": "0x6666666666666666666666666666666666666666",
+    "v3Migrator": "0x7777777777777777777777777777777777777777",
+    "swapRouter02": "0x8888888888888888888888888888888888888888",
+    "tickLens": "0x9999999999999999999999999999999999999999",
+    "mixedRouteQuoterV1": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "universalRouterV1_2": {
+      "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "creationBlock": 17143817
+    },
+    "universalRouterV2_0": {
+      "address": "0xcccccccccccccccccccccccccccccccccccccccc",
+      "creationBlock": 1737658355
+    },
+    "weth": "0xdddddddddddddddddddddddddddddddddddddddd",
+    "permit2": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "v4PoolManager": "0xffffffffffffffffffffffffffffffffffffffff",
+    "v4PositionManager": "0x0000000000000000000000000000000000000001",
+    "v4StateView": "0x0000000000000000000000000000000000000002",
+    "v4Quoter": "0x0000000000000000000000000000000000000003"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Whitelabel Uniswap Configuration",
+  "description": "Configuration for patching Uniswap SDK packages with custom contract addresses",
+  "type": "object",
+  "required": ["chainId", "chainName", "addresses"],
+  "properties": {
+    "chainId": {
+      "type": "number",
+      "description": "Your custom chain ID",
+      "minimum": 1
+    },
+    "chainName": {
+      "type": "string",
+      "description": "A friendly name for your chain",
+      "minLength": 1
+    },
+    "addresses": {
+      "type": "object",
+      "description": "Contract addresses for Uniswap protocol deployments",
+      "required": [
+        "v2Factory",
+        "v2Router",
+        "v3CoreFactory",
+        "multicall",
+        "quoter",
+        "universalRouterV1_2",
+        "universalRouterV2_0",
+        "weth",
+        "permit2"
+      ],
+      "properties": {
+        "v2Factory": {
+          "type": "string",
+          "description": "Uniswap V2 Factory contract address",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "v2Router": {
+          "type": "string",
+          "description": "Uniswap V2 Router contract address",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "v3CoreFactory": {
+          "type": "string",
+          "description": "Uniswap V3 Core Factory contract address",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "multicall": {
+          "type": "string",
+          "description": "Multicall contract address",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "quoter": {
+          "type": "string",
+          "description": "V3 Quoter contract address",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "nonfungiblePositionManager": {
+          "type": "string",
+          "description": "V3 Nonfungible Position Manager contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "v3Migrator": {
+          "type": "string",
+          "description": "V3 Migrator contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "swapRouter02": {
+          "type": "string",
+          "description": "Swap Router 02 contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "tickLens": {
+          "type": "string",
+          "description": "Tick Lens contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "mixedRouteQuoterV1": {
+          "type": "string",
+          "description": "Mixed Route Quoter V1 contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "universalRouterV1_2": {
+          "type": "object",
+          "description": "Universal Router V1.2 configuration",
+          "required": ["address", "creationBlock"],
+          "properties": {
+            "address": {
+              "type": "string",
+              "description": "Universal Router V1.2 contract address",
+              "pattern": "^0x[a-fA-F0-9]{40}$"
+            },
+            "creationBlock": {
+              "type": "number",
+              "description": "Block number when the contract was deployed",
+              "minimum": 0
+            }
+          }
+        },
+        "universalRouterV2_0": {
+          "type": "object",
+          "description": "Universal Router V2.0 configuration",
+          "required": ["address", "creationBlock"],
+          "properties": {
+            "address": {
+              "type": "string",
+              "description": "Universal Router V2.0 contract address",
+              "pattern": "^0x[a-fA-F0-9]{40}$"
+            },
+            "creationBlock": {
+              "type": "number",
+              "description": "Block number when the contract was deployed",
+              "minimum": 0
+            }
+          }
+        },
+        "weth": {
+          "type": "string",
+          "description": "Wrapped native token (WETH/WMATIC/etc) contract address",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "permit2": {
+          "type": "string",
+          "description": "Permit2 contract address",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "v4PoolManager": {
+          "type": "string",
+          "description": "Uniswap V4 Pool Manager contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "v4PositionManager": {
+          "type": "string",
+          "description": "Uniswap V4 Position Manager contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "v4StateView": {
+          "type": "string",
+          "description": "Uniswap V4 State View contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "v4Quoter": {
+          "type": "string",
+          "description": "Uniswap V4 Quoter contract address (optional)",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        }
+      }
+    }
+  }
+}

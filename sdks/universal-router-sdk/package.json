@@ -12,6 +12,7 @@
   "files": [
     "dist"
   ],
+  "version": "4.20.0",
   "engines": {
     "node": ">=14"
   },
