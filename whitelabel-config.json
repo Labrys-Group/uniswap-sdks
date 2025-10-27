@@ -1,32 +1,20 @@
 {
   "$schema": "./whitelabel-config.schema.json",
   "_warning": "⚠️  IMPORTANT: These are EXAMPLE addresses from Ethereum Mainnet. You MUST update all addresses with your own deployed contract addresses before running 'bun run patch:addresses'. Using these placeholder values will break your application!",
-  "chainId": 12345,
-  "chainName": "My Custom Chain",
+  "chainId": 11155111,
+  "chainName": "sepolia",
   "addresses": {
-    "v2Factory": "0x1111111111111111111111111111111111111111",
-    "v2Router": "0x2222222222222222222222222222222222222222",
-    "v3CoreFactory": "0x3333333333333333333333333333333333333333",
-    "multicall": "0x4444444444444444444444444444444444444444",
-    "quoter": "0x5555555555555555555555555555555555555555",
-    "nonfungiblePositionManager": "0x6666666666666666666666666666666666666666",
-    "v3Migrator": "0x7777777777777777777777777777777777777777",
-    "swapRouter02": "0x8888888888888888888888888888888888888888",
-    "tickLens": "0x9999999999999999999999999999999999999999",
-    "mixedRouteQuoterV1": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "universalRouterV1_2": {
-      "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-      "creationBlock": 17143817
-    },
+    "v3CoreFactory": "0xe36332c4236AB724ddde7E3FbcE133274d7d2279",
+    "multicall": "0x78A70C5F23471d0e53D9F5F1A794014136977687",
+    "quoter": "0x37FB557e460fc031D32F729f92795d67c4B32c5c",
+    "nonfungiblePositionManager": "0xD7b3CC18d4E36b15309219c4234446b88cF69387",
+    "swapRouter02": "0x0C47b68B4242669C7f1D1D2DDD95ff556D834253",
+    "tickLens": "0x0000000000000000000000000000000000000000",
     "universalRouterV2_0": {
-      "address": "0xcccccccccccccccccccccccccccccccccccccccc",
-      "creationBlock": 1737658355
+      "address": "0x6872c178C147c487A71e6033B665a5644c4E7990",
+      "creationBlock": 9499896
     },
-    "weth": "0xdddddddddddddddddddddddddddddddddddddddd",
-    "permit2": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    "v4PoolManager": "0xffffffffffffffffffffffffffffffffffffffff",
-    "v4PositionManager": "0x0000000000000000000000000000000000000001",
-    "v4StateView": "0x0000000000000000000000000000000000000002",
-    "v4Quoter": "0x0000000000000000000000000000000000000003"
+    "weth": "0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9",
+    "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3"
   }
 }

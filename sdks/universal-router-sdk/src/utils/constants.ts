@@ -56,7 +56,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
         creationBlock: 3543575,
       },
       [UniversalRouterVersion.V2_0]: {
-        address: '0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b', // only update here and creation block below
+        address: '0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b',
         creationBlock: 7259601,
       },
     },

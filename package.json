@@ -30,7 +30,7 @@
     "g:typecheck": "turbo run typecheck",
     "sdk": "yarn workspace",
     "postinstall": "husky",
-    "whitelabel:build":"tsx scripts/whitelabel-build.ts"
+    "whitelabel:build": "tsx scripts/whitelabel-build.ts"
   },
   "workspaces": [
     "sdks/*",

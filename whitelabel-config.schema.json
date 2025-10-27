@@ -19,27 +19,14 @@
       "type": "object",
       "description": "Contract addresses for Uniswap protocol deployments",
       "required": [
-        "v2Factory",
-        "v2Router",
         "v3CoreFactory",
         "multicall",
         "quoter",
-        "universalRouterV1_2",
         "universalRouterV2_0",
         "weth",
         "permit2"
       ],
       "properties": {
-        "v2Factory": {
-          "type": "string",
-          "description": "Uniswap V2 Factory contract address",
-          "pattern": "^0x[a-fA-F0-9]{40}$"
-        },
-        "v2Router": {
-          "type": "string",
-          "description": "Uniswap V2 Router contract address",
-          "pattern": "^0x[a-fA-F0-9]{40}$"
-        },
         "v3CoreFactory": {
           "type": "string",
           "description": "Uniswap V3 Core Factory contract address",
@@ -80,23 +67,7 @@
           "description": "Mixed Route Quoter V1 contract address (optional)",
           "pattern": "^0x[a-fA-F0-9]{40}$"
         },
-        "universalRouterV1_2": {
-          "type": "object",
-          "description": "Universal Router V1.2 configuration",
-          "required": ["address", "creationBlock"],
-          "properties": {
-            "address": {
-              "type": "string",
-              "description": "Universal Router V1.2 contract address",
-              "pattern": "^0x[a-fA-F0-9]{40}$"
-            },
-            "creationBlock": {
-              "type": "number",
-              "description": "Block number when the contract was deployed",
-              "minimum": 0
-            }
-          }
-        },
+
         "universalRouterV2_0": {
           "type": "object",
           "description": "Universal Router V2.0 configuration",
@@ -122,26 +93,6 @@
         "permit2": {
           "type": "string",
           "description": "Permit2 contract address",
-          "pattern": "^0x[a-fA-F0-9]{40}$"
-        },
-        "v4PoolManager": {
-          "type": "string",
-          "description": "Uniswap V4 Pool Manager contract address (optional)",
-          "pattern": "^0x[a-fA-F0-9]{40}$"
-        },
-        "v4PositionManager": {
-          "type": "string",
-          "description": "Uniswap V4 Position Manager contract address (optional)",
-          "pattern": "^0x[a-fA-F0-9]{40}$"
-        },
-        "v4StateView": {
-          "type": "string",
-          "description": "Uniswap V4 State View contract address (optional)",
-          "pattern": "^0x[a-fA-F0-9]{40}$"
-        },
-        "v4Quoter": {
-          "type": "string",
-          "description": "Uniswap V4 Quoter contract address (optional)",
           "pattern": "^0x[a-fA-F0-9]{40}$"
         }
       }

@@ -13,8 +13,6 @@ export interface WhitelabelConfig {
   chainId: number;
   chainName: string;
   addresses: {
-    v2Factory: string;
-    v2Router: string;
     v3CoreFactory: string;
     multicall: string;
     quoter: string;
@@ -23,14 +21,9 @@ export interface WhitelabelConfig {
     swapRouter02?: string;
     tickLens?: string;
     mixedRouteQuoterV1?: string;
-    universalRouterV1_2: UniversalRouterConfig;
     universalRouterV2_0: UniversalRouterConfig;
     weth: string;
     permit2: string;
-    v4PoolManager?: string;
-    v4PositionManager?: string;
-    v4StateView?: string;
-    v4Quoter?: string;
   };
 }
 
