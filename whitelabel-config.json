@@ -9,7 +9,7 @@
     "quoter": "0x37FB557e460fc031D32F729f92795d67c4B32c5c",
     "nonfungiblePositionManager": "0xD7b3CC18d4E36b15309219c4234446b88cF69387",
     "swapRouter02": "0x0C47b68B4242669C7f1D1D2DDD95ff556D834253",
-    "tickLens": "0x0000000000000000000000000000000000000000",
+    "tickLens": "0xFE4b1F44bd498b229c3961C63F6E4b66AbD1A09e",
     "universalRouterV2_0": {
       "address": "0x6872c178C147c487A71e6033B665a5644c4E7990",
       "creationBlock": 9499896
