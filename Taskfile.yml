@@ -1,0 +1,23 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  install:
+    cmds:
+      - yarn install
+  build:
+    cmds:
+      - yarn g:build
+  lint:
+    cmds:
+      - yarn g:lint
+  typecheck:
+    cmds:
+      - yarn g:typecheck
+  whitelabel:
+    cmds:
+      - yarn whitelabel:build
