@@ -1,20 +1,22 @@
 {
   "$schema": "./whitelabel-config.schema.json",
   "_warning": "⚠️  IMPORTANT: These are EXAMPLE addresses from Ethereum Mainnet. You MUST update all addresses with your own deployed contract addresses before running 'bun run patch:addresses'. Using these placeholder values will break your application!",
-  "chainId": 11155111,
-  "chainName": "sepolia",
+  "chainId": 13473,
+  "chainName": "Immutable zkEVM Testnet",
   "addresses": {
-    "v3CoreFactory": "0xe36332c4236AB724ddde7E3FbcE133274d7d2279",
-    "multicall": "0x78A70C5F23471d0e53D9F5F1A794014136977687",
-    "quoter": "0x37FB557e460fc031D32F729f92795d67c4B32c5c",
-    "nonfungiblePositionManager": "0xD7b3CC18d4E36b15309219c4234446b88cF69387",
-    "swapRouter02": "0x0C47b68B4242669C7f1D1D2DDD95ff556D834253",
-    "tickLens": "0xFE4b1F44bd498b229c3961C63F6E4b66AbD1A09e",
+    "v3CoreFactory": "0x918ca6e5Db17511136dfbb86a936e666bCFcfe81",
+    "multicall": "0x7D9316B9991352D070c5087AA7246487C1A96e81",
+    "quoter": "0x83d7b253d2B6f7449186A3C884f66c77A01393b8",
+    "nonfungiblePositionManager": "0x489d40171a5d0c2be815E49a33951000595578B0",
+    "v3Migrator": "0xD4EE15c2469901093d60f658F5CEc822Fc62024a",
+    "swapRouter02": "0x4FCfc754A35ECb95625Ec38dc4243017FD18d52D",
+    "tickLens": "0x175B4e2eF18389Ae6e1EC4c0d1f25aA9cB0788aB",
+    "mixedRouteQuoterV1": "0x0000000000000000000000000000000000000000",
     "universalRouterV2_0": {
-      "address": "0x6872c178C147c487A71e6033B665a5644c4E7990",
-      "creationBlock": 9499896
+      "address": "0xc6A2E1A4d1B4bF71d0C8d6a20E88Cc531C23de91",
+      "creationBlock": 31576098
     },
-    "weth": "0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9",
+    "weth": "0xe9E96d1aad82562b7588F03f49aD34186f996478",
     "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3"
   }
 }

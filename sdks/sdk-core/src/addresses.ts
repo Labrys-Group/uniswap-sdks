@@ -464,6 +464,16 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.MONAD_TESTNET]: MONAD_TESTNET_ADDRESSES,
   [ChainId.SONEIUM]: SONEIUM_ADDRESSES,
   [ChainId.MONAD]: MONAD_ADDRESSES,
+
+  [ChainId.IMMUTABLE_ZKEVM_TESTNET]: {
+    v3CoreFactoryAddress: '0x918ca6e5Db17511136dfbb86a936e666bCFcfe81',
+    multicallAddress: '0x7D9316B9991352D070c5087AA7246487C1A96e81',
+    quoterAddress: '0x83d7b253d2B6f7449186A3C884f66c77A01393b8',
+    v3MigratorAddress: '0xD4EE15c2469901093d60f658F5CEc822Fc62024a',
+    nonfungiblePositionManagerAddress: '0x489d40171a5d0c2be815E49a33951000595578B0',
+    tickLensAddress: '0x175B4e2eF18389Ae6e1EC4c0d1f25aA9cB0788aB',
+    mixedRouteQuoterV1Address: '0x0000000000000000000000000000000000000000',
+  },
 }
 
 /* V3 Contract Addresses */
